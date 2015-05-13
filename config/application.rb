@@ -9,8 +9,7 @@ Bundler.require(*Rails.groups)
 module DemoApp
   class Application < Rails::Application
     
-    # For Heroku
-    config.assets.initialize_on_precompile = false
+
     
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -25,5 +24,6 @@ module DemoApp
     # config.i18n.default_locale = :de
   end
 end
-
+    # For Heroku
+    config.assets.initialize_on_precompile = false
 
